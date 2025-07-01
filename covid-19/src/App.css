@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.date-box {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: white;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.stat-summary {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-summary > div {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+}
+
+.stat-summary > div:last-child {
+  border-right: none;
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.charts > div {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
