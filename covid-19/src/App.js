@@ -22,7 +22,7 @@ function App() {
     setSelectedStates((prev) =>
       prev.includes(stateCode)
         ? prev.filter((s) => s !== stateCode)
-        : [...prev, stateCode]
+        :[prev, stateCode]
     );
   };
 
